@@ -11,5 +11,13 @@ class EventosRepository:
             except Exception as exception:
                 DB.session.rolback()
                 raise exception
-                pass
-        
+            
+    def select_event(self,event_name:str) -> Eventos:
+        with DBConnectionHandler() as DB:
+            data = (
+                DB.session
+                .query(Eventos)
+                .filter(Eventos.nome == event_name)
+                .one_or_none()
+            )
+            return data
