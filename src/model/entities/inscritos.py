@@ -1,8 +1,8 @@
 """
     Create a entity Inscritos
 """
-from src.model.configs.base import Base
 from sqlalchemy import Column, String, Integer, ForeignKey
+from src.model.configs.base import Base
 
 class Inscritos(Base):
     """

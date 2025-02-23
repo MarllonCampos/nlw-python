@@ -9,5 +9,8 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true
+  },
+  "[python]": {
+    "editor.tabSize": 4
   }
 }
