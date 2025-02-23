@@ -1,6 +1,6 @@
-from src.say_hello import say_hi
+from src.main.server.server import app
 
 
 
 if __name__ == "__main__":
-  say_hi()
+  app.run(host="0.0.0.0", port=3000, debug=True)
